@@ -5,7 +5,23 @@
 
 .link {
   text-decoration: none;
-  color: black;
+  color: rgb(201, 194, 194);
   font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* .link:hover {
+  color: #ffffff;
+  transition: color 0.3s;
+} */
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.active {
+  color: #53b4cc;
   font-weight: bold;
 }

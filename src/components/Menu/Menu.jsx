@@ -5,22 +5,52 @@ import s from "./Menu.module.css";
 const Menu = () => {
   return (
     <div className={s.menu}>
-      <NavLink className={s.link} to="/">
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive ? `${s.link} ${s.active}` : s.link
+        }
+      >
         Home
       </NavLink>
-      <NavLink className={s.link} to="/about">
+      <NavLink
+        to="/about"
+        className={({ isActive }) =>
+          isActive ? `${s.link} ${s.active}` : s.link
+        }
+      >
         About
       </NavLink>
-      <NavLink className={s.link} to="/attainments">
+      <NavLink
+        to="/attainments"
+        className={({ isActive }) =>
+          isActive ? `${s.link} ${s.active}` : s.link
+        }
+      >
         Attainments
       </NavLink>
-      <NavLink className={s.link} to="/service">
+      <NavLink
+        to="/service"
+        className={({ isActive }) =>
+          isActive ? `${s.link} ${s.active}` : s.link
+        }
+      >
         Service
       </NavLink>
-      <NavLink className={s.link} to="/projects">
+      <NavLink
+        to="/projects"
+        className={({ isActive }) =>
+          isActive ? `${s.link} ${s.active}` : s.link
+        }
+      >
         Projects
       </NavLink>
-      <NavLink className={s.link} to="/contact">
+      <NavLink
+        to="/contact"
+        className={({ isActive }) =>
+          isActive ? `${s.link} ${s.active}` : s.link
+        }
+      >
         Contact
       </NavLink>
     </div>
