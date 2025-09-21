@@ -21,14 +21,14 @@ const Menu = () => {
       >
         About
       </NavLink>
-      <NavLink
+      {/* <NavLink
         to="/attainments"
         className={({ isActive }) =>
           isActive ? `${s.link} ${s.active}` : s.link
         }
       >
         Attainments
-      </NavLink>
+      </NavLink> */}
       <NavLink
         to="/service"
         className={({ isActive }) =>

@@ -1,3 +1,11 @@
+import AboutSection from "../../components/AboutSection/AboutSection";
+import BackButton from "../../components/BackButton/BackButton";
+
 export default function About() {
-  return <div>About page1</div>;
+  return (
+    <div>
+      <BackButton />
+      <AboutSection />
+    </div>
+  );
 }

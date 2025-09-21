@@ -2,7 +2,7 @@ import React from "react";
 import s from "./StartSection.module.css";
 import MainBtn from "../Buttons/MainBtn/MainBtn";
 import { Link } from "react-router-dom";
-import Minion from "../../assets/images/minjon.jpg";
+import MyPhoto from "../../assets/images/my-photo.png";
 
 const StartSection = () => {
   return (
@@ -25,7 +25,7 @@ const StartSection = () => {
         </div>
       </div>
       <div className={s.imageContainer}>
-        <img className={s.img} src={Minion} alt="minion" />
+        <img className={s.img} src={MyPhoto} alt="minion" />
       </div>
     </div>
   );

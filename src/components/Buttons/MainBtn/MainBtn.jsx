@@ -1,12 +1,13 @@
-import React, { Children } from "react";
 import { Link } from "react-router-dom";
 import s from "./MainBtn.module.css";
 
-const MainBtn = () => {
+const MainBtn = ({ link, children }) => {
   return (
-    <div className={s.container}>
-      <button className={s.btn}></button>
-    </div>
+    <>
+      <Link className={s.link} to={link}>
+        {children}
+      </Link>
+    </>
   );
 };
 
