@@ -1,26 +1,29 @@
 .container {
-  margin-top: 50px;
-}
-
-.list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
-.item {
-  background-color: #000000;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 300px;
-  height: 300px;
-  text-align: center;
+.link {
+}
+
+.link:hover {
 }
 
 .video {
   width: 100%;
-  height: 100%;
   object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(70%);
+}
+
+.video:hover {
+  filter: brightness(100%);
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+  transform: scale(1.01);
 }
